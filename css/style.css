@@ -1,0 +1,304 @@
+*{margin: 0;padding: 0;}
+body{
+    font-family: 'Nunito', sans-serif;
+}
+ul,li{list-style: none;}
+p{font-size: 20px;}
+
+/* header css */
+/* header .navbar .navbar-nav .nav-item .nav-link {color:#000030; font-weight: 700;transition: 0.5s;margin-right: 50px;}
+header .navbar .navbar-nav .nav-item .nav-link:hover{color: #ffffff;} */
+header .navbar-light .navbar-nav .nav-link {
+    color: #000030;font-weight: 700;margin-right: 50px;
+}
+.bg-light{background-color: #99ccff !important;}
+.banner h1{color: #000030;font-weight: 700; font-size: 48px;}
+.banner-text{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.banner{
+    position: relative;
+    padding-top:80px;
+    padding-bottom: 50px;
+    z-index:1;
+}
+.banner::before {
+    content: '';
+    background: url(../images/shape.png) no-repeat;
+    bottom: -117px;
+    width: 100%;
+    height: 320px;
+    background-size: cover;
+    display: inline-block;
+    position: absolute;
+    z-index: 0;
+}
+
+
+/* how it work css */
+.htw{margin-top: 180px;}
+.title-name{
+    font-size: 40px;
+    font-weight: 700;
+    color: #e10c30;
+    text-transform:uppercase ;
+}
+
+.htw p{
+    font-size: 18px;
+}
+.list-style{
+    list-style-type: none;
+}
+.list-style li {
+        margin-bottom: 14px;
+        position: relative;
+        list-style: none;
+        padding-left: 25px;
+        
+}
+.list-style li:before {
+    content:'\f18e';
+    font-family: FontAwesome;
+    color: rgb(230,0,35);
+    font-size: 19px;
+    padding-right: 0.5em;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.htw-sub{
+    padding-top: 5rem;
+}
+.vl-hz-center{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Docbot css */
+.docbot{
+    margin: 5rem 0rem;
+    /* padding: 3rem 0rem 0rem 0rem; */
+    background-color: #99ccff;
+}
+/* White Boxes */
+
+.white-box {
+    background-color: #fff;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    margin-bottom: 3rem;
+    border-radius: 1rem;
+    min-height: 22.5rem;
+  }
+  .white-box p b{color: #e10c30;}
+
+  
+  .box-img {
+    position: relative;
+    margin-bottom: 0.5rem;
+  }
+  
+  .box-img:before {
+    content: "";
+    position: absolute;
+    width: 0.7rem;
+    height: 3.5rem;
+    background-color: #e10c30;
+    left: -1rem;
+    top: 0;
+  }
+  
+  
+  
+  .white-box.box1 {
+    position: relative;
+  }
+  
+  .white-box.box1:after {
+    content: url("../img/circles-effect-2.png");
+    position: absolute;
+    left: -80%;
+    bottom: -40%;
+    z-index: -1;
+    transform: rotate(30deg);
+  }
+
+.line-height-4{line-height: 39px;}
+
+/* call  to  action */
+.cta {
+    background: linear-gradient(rgba(39, 42, 43, 0.7),rgba(42, 47, 48, 0.8)), url('../images/cta-img.jpg');
+   padding: 70px 0;
+   margin-bottom: 70px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .btn-info {
+    font-size: 16px;
+    color:#fff;
+    letter-spacing: 1px;
+    line-height: 15px;
+    border: 2px solid #FFF;
+    border-radius: 40px;
+    background: transparent;
+    transition: all 0.3s ease 0s;
+    padding: 13px;
+  }
+  
+  .btn-info:hover {
+    color: #FFF;
+    background-color: #e10c30;
+   
+    border: 2px solid rgba(0, 0, 0, 0.75);
+  }
+
+  .agi-btn {
+    font: 16px;
+    display: inline-block;
+    padding: 0.6em 2em;
+    text-align: center;
+    color: white;
+    background: #e10c30; /* default color */
+
+    /* "to left" / "to right" - affects initial color */
+    background: linear-gradient(to left, rgb(207, 46, 29) 50%, rgb(26, 23, 23) 50%) right;
+    background-size: 200%;
+    border-radius: 10px;
+    transition: .5s ease-out;
+}
+.agi-btn:hover {
+    background-position: left;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Footer Css */
+footer{
+    position: relative;
+    background-color: #99ccff;
+   }
+footer::before {
+    content: '';
+    background: url(../images/footer-shape.png) no-repeat;
+    top:0;
+    width: 100%;
+    height: 131px;
+    background-size: cover;
+    display: inline-block;
+    position: absolute;
+    z-index: 0;
+}
+.footer-content{
+    padding-top: 8rem;
+}
+
+.footer-title{
+    font-size: 20px;
+    font-weight: 700;
+    color: #000030;
+    margin-bottom: 20px;
+}
+.footer-content .footer-link a{
+    color: #000030;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.footer-content .footer-link li{margin-bottom: 10px;}
+
+/* footer form */
+.mu-newsletter-content {
+   
+    margin-top: 5px;
+    width: 100%;
+    
+}
+
+.mu-subscribe-form {
+    position: relative;
+}
+
+.mu-subscribe-form input {
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    padding: 0 170px 0 20px;
+    font-size: 14px;
+    color: #000;
+}
+
+.mu-subscribe-btn {
+    background: #e10c30;
+    background: linear-gradient(to left, rgb(207, 46, 29) 50%, rgb(26, 23, 23) 50%) right;
+    background-size: 200%;
+    border-radius: 10px;
+    transition: .5s ease-out;
+    color: #fff;
+    font-size: 17px;
+    position: absolute;
+    right: 6px;
+    top: 5px;
+    height: 40px;
+    width: 152px;
+    cursor: pointer;
+    border-radius: 24px;
+    font-weight: 700;
+}
+
+.mu-subscribe-btn:hover{
+    background-position: left;
+    color: #fff;
+}
+
+.bottom-footer{
+    padding: 20px 0px;
+    background-color: #3d4247;
+    color: #fff;
+}
+.bottom-footer ul{padding-bottom: 0;}
+.bottom-footer a {color: #fff;}
+
+
+
+
+
+
+
+
+
+/*---------------------------------- Responsive css ---------------------------------------------- */
+@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu{ display: none; }
+	.navbar .nav-item:hover .nav-link{ color: #fff;transition: 0.5s;}
+	.navbar .nav-item:hover .dropdown-menu{ display: block;transition: 0.5s; }
+	.navbar .nav-item .dropdown-menu{ margin-top:0; }
+}	
+/* ============ desktop view .end// ============ */
+
+@media(max-width:1024px){
+    .banner::before {
+    height: 229px;}
+}
+
+@media(max-width:767px){
+    .banner::before {
+    display: none;
+    }
+}
