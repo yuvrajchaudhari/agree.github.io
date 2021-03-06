@@ -302,11 +302,15 @@ footer::before {
     }
     .banner::before {
    display: none;}
+   .htw {
+    margin-top: 36px;
+}
     .footer-content {
         padding-top: 3rem;
     }
 }
 @media(max-width:991px){
+    .bottom-footer{padding-bottom: 15px;}
     footer::before{display: none;}
 }
 @media(max-width:767px){
