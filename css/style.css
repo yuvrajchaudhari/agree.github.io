@@ -303,7 +303,7 @@ footer::before {
     .banner::before {
    display: none;}
    .htw {
-    margin-top: 36px;
+    margin-top: 3rem;
 }
     .footer-content {
         padding-top: 3rem;
