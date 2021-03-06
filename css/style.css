@@ -1,4 +1,4 @@
-*{margin: 0;padding: 0;}
+*{margin: 0;padding: 0;box-sizing: border-box;}
 body{
     font-family: 'Nunito', sans-serif;
 }
@@ -148,6 +148,7 @@ header .navbar-light .navbar-nav .nav-link {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100%;
   }
   .btn-info {
     font-size: 16px;
@@ -207,7 +208,9 @@ footer::before {
 .footer-content{
     padding-top: 8rem;
 }
-
+.footer-content input:focus{
+    outline: -webkit-focus-ring-color auto 0px !important;
+}
 .footer-title{
     font-size: 20px;
     font-weight: 700;
@@ -268,13 +271,14 @@ footer::before {
 }
 
 .bottom-footer{
-    padding: 20px 0px;
+    padding-top: 19px;
     background-color: #3d4247;
     color: #fff;
 }
 .bottom-footer ul{padding-bottom: 0;}
 .bottom-footer a {color: #fff;}
-
+.social-media a{color: #3c494b;}
+.social-media a:hover {color: #fff;}
 
 
 
@@ -293,10 +297,18 @@ footer::before {
 /* ============ desktop view .end// ============ */
 
 @media(max-width:1024px){
+    .banner h1 {
+        font-size: 30px;
+    }
     .banner::before {
-    height: 229px;}
+   display: none;}
+    .footer-content {
+        padding-top: 3rem;
+    }
 }
-
+@media(max-width:991px){
+    footer::before{display: none;}
+}
 @media(max-width:767px){
     .banner::before {
     display: none;
