@@ -520,8 +520,10 @@ footer::before {
 footer::before{display:none;}
 .internal-banner::before{display: none;}
 .services-content h2 {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
 }
+.services-content p{margin-bottom: 10px !important;}
+
 .overlay {
     height: 56px;}
     .internal-banner {
@@ -543,6 +545,12 @@ footer::before{display:none;}
     .internal-banner h1 {
         font-size: 35px;
     }
+    .services-content p{font-size:16px;margin-bottom: 10px !important;}
+    .services-content h2 {
+        font-size: 1.4rem;
+    }
+    .overlay {
+        height: 46px;}
 
 }
 @media(max-width:767px) {
